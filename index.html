@@ -6,24 +6,28 @@
   <title>My Resume</title>
 </head>
 <body>
-    <header>
+    <header role="banner">
         <img src="images/profile_picture.jpg" alt="Profile photo of Sania Parvej" width="150">
         <h1>Sania Parvej</h1>
+    
 
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Code Icon">
+            <title>Code Icon</title>
             <polyline points="16 18 22 12 16 6"></polyline>
             <polyline points="8 6 2 12 8 18"></polyline>
+        
         </svg>
         <p>Creative Web Developer | Turning Ideas Into Reality</p>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
+        <main role="main">
+    <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
         <p>With a strong focus on accessibility and usability, I build web solutions that deliver seamless experiences for all users.</p>
     </section>
 
-    <section id="skills">
-        <h2>Core Competencies</h2>
+    <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Core Competencies</h2>
         <ul>
             <li>HTML5 & Semantic Markup</li>
             <li>Advanced Responsive Design with CSS</li>
@@ -31,18 +35,29 @@
         </ul>        
     </section>
 
-    <section id="experience">
-        <h2>Professional Experience and Education</h2>
-        <p>Web Development Intern - 2023</p>
-        <p>Bachelor of Science in Computer Science - Expected 2025</p>
-        <p>Associate Degree in Inofrmation Technology - 2022</p>
-        <p>High School Diploma - 2020</p>
-        <p>Certified Web Developer - 2023</p>
+    <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Professional Experience and Education</h2>
+        <article>
+            <h3>Experience</h3>
+            <p>Web Development Intern - 2023</p>
+        </article>
+
+        <article>
+            <h3>Education</h3>
+            <ul>
+
+                <li>Bachelor of Science in Computer Science - Expected 2025</li>
+                <li>Associate Degree in Information Technology - 2022</li>
+                <li>High School Diploma - 2020</li>
+                <li>Certified Web Developer - 2023</li>
+            </ul>
+        </article>
+
        
     </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
+    <section id="portfolio" aria-labelledby="portfolio-heading">
+        <h2 id="portfolio-heading">Portfolio</h2>
         <p> Here are some of the sample projects demonstrating various web development concepts: </p>
         <ul>
             <li>Project 1: Javascript Coding Practice - Simple interactive features built with JS </li>
@@ -50,11 +65,12 @@
             <li>Project 3: Creative Tech Experiment - Exploring creative coding concepts.</li>    
         </ul>
     </section>
+    </main>
     
-    <footer>
+    <footer role="contentinfo">
         <p>Contact Information here</p>
         <p>Email: <a href="mailto:sania@example.com">sania@example.com</a></p>
-        <p>Github: <a href="https://github.com/rrc-w2025-sparvej" target="_blank">github.com/rrc-w2025-sparvej/</a></p>
+        <p>Github: <a href="https://github.com/rrc-w2025-sparvej" target="_blank" rel="noopener noreferrer">github.com/rrc-w2025-sparvej</a></p>
     </footer>
 
 </body>
